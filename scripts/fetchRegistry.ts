@@ -1,6 +1,6 @@
 import { RpcClient } from '../node_modules/cosmes/src/client';
 import { utf8 } from '../node_modules/cosmes/src/codec';
-import { CosmwasmWasmV1QueryContractsByCodeService as QueryContractsByCodeService, CosmwasmWasmV1QuerySmartContractStateService as QuerySmartContractStateService } from '../node_modules/cosmes/src/protobufs';
+import { CosmwasmWasmV1QueryContractsByCodeService as QueryContractsByCodeService, CosmwasmWasmV1QuerySmartContractStateService as QuerySmartContractStateService, CosmwasmWasmV1QueryRawContractStateService as QueryRawContractStateService } from '../node_modules/cosmes/src/protobufs';
 
 import { ConfigResponse as ReserveConfigResponse } from '../src/types/UnstakeReserve.types';
 import { ConfigResponse as ControllerConfigResponse } from '../src/types/UnstakeController.types';
@@ -37,7 +37,7 @@ async function main() {
 
     const data: { [K in NETWORK]: {
         [contract: string]: {
-            [address: string]: any[]
+            [address: string]: any
         }
     } } = {
         "harpoon-4": {},
@@ -48,6 +48,7 @@ async function main() {
         console.log(`Fetching data for ${network}...`);
         const contractsQuery = RpcClient.newBatchQuery(endpoints[network as NETWORK]);
         const configsQuery = RpcClient.newBatchQuery(endpoints[network as NETWORK]);
+        const rawQuery = RpcClient.newBatchQuery(endpoints[network as NETWORK]);
 
         const codes = allCodes[network as NETWORK];
         for (const contract in codes) {
@@ -79,6 +80,18 @@ async function main() {
                                 ...config,
                             };
                         });
+                        if (contract === "controller") {
+                            rawQuery.add(QueryRawContractStateService, { address: addr, queryData: Buffer.from("broker") }, (err, res) => {
+                                if (err) {
+                                    console.error(err);
+                                    process.exit(1);
+                                }
+                                data[network as NETWORK][contract][addr] = {
+                                    ...data[network as NETWORK][contract][addr],
+                                    broker: JSON.parse(Buffer.from(res.data).toString('ascii'))
+                                };
+                            });
+                        }
                     }
                 });
             }
@@ -86,6 +99,7 @@ async function main() {
 
         await contractsQuery.send();
         await configsQuery.send();
+        await rawQuery.send();
     }
 
     const byContractData: { [contract: string]: { [network in NETWORK]: { [address: string]: any } } } = {};
