@@ -2,21 +2,19 @@
   "name": "@entropic-labs/unstake.js",
   "version": "0.0.4",
   "type": "module",
-  "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
   "module": "dist/src/index.js",
   "devDependencies": {
     "@types/bun": "latest",
-    "cosmes": "git+https://github.com/AmitPr/cosmes.git"
+    "cosmes": "git+https://github.com/AmitPr/cosmes.git",
+    "tsc-alias": "1.8.10"
   },
   "peerDependencies": {
-    "typescript": "^5.0.0"
-  },
-  "dependencies": {
+    "typescript": "^5.0.0",
     "type-fest": "^4.20.0"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "rm -rf dist && tsc && tsc-alias",
     "tag": "npm version patch && git push --tags"
   },
   "files": [
