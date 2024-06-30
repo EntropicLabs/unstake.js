@@ -4,6 +4,7 @@ import { CosmwasmWasmV1QueryContractsByCodeService as QueryContractsByCodeServic
 
 import { ConfigResponse as ReserveConfigResponse } from '../src/types/UnstakeReserve.types';
 import { ConfigResponse as ControllerConfigResponse } from '../src/types/UnstakeController.types';
+import { CREATION_DATES } from '../src/registry/constants';
 
 
 type NETWORK = 'harpoon-4' | 'kaiyo-1';
@@ -17,17 +18,19 @@ const codesFile = Bun.file("src/registry/codes.json");
 const outputDir = "src/registry";
 
 const endpoints: { [K in NETWORK]: string } = {
-    "harpoon-4": "https://test-rpc-kujira.mintthemoon.xyz/",
+    "harpoon-4": "https://rpc-kujira-testnet.starsquid.io/",
     "kaiyo-1": "https://rpc.cosmos.directory/kujira/"
 }
 
-const mappers: { [contract: string]: ((any) => any) | undefined } = {
-    controller: (config: ControllerConfigResponse) => {
+const mappers: { [contract: string]: ((contract: string, config) => any) | undefined } = {
+    controller: (contract: string, config: ControllerConfigResponse) => {
         delete config.owner;
         return config;
     },
-    reserve: (config: ReserveConfigResponse) => {
+    reserve: (contract: string, config: ReserveConfigResponse) => {
         delete config.owner;
+        const creation = CREATION_DATES[contract] ?? 0;
+        (config as any).creation = creation;
         return config;
     },
 }
@@ -72,7 +75,7 @@ async function main() {
 
                             let config = JSON.parse(utf8.encode(res.data));
                             if (mappers[contract]) {
-                                config = mappers[contract](config);
+                                config = mappers[contract](addr, config);
                             }
 
                             data[network as NETWORK][contract][addr] = {
