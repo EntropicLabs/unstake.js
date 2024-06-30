@@ -33,7 +33,7 @@ const registry = {
             "rsv_denom": "factory/kujira1644hwd9mjasvnjf2qcadlzxs6egs6d2km2k6lety9u5fdmhzfg0svr54zh/ursv",
             "ghost_denom": "factory/kujira143fwcudwy0exd6zd3xyvqt2kae68ud6n8jqchufu7wdg5sryd4lqtlvvep/urcpt",
             "ghost_vault_addr": "kujira143fwcudwy0exd6zd3xyvqt2kae68ud6n8jqchufu7wdg5sryd4lqtlvvep",
-            "creation": 1715355840
+            "creation": 1718034240
         },
         "kujira1vvquglh6dn35gz22t7dd05y5kpckjleudyw9x3n6hgd324vq0hyq66zca0": {
             "address": "kujira1vvquglh6dn35gz22t7dd05y5kpckjleudyw9x3n6hgd324vq0hyq66zca0",
@@ -41,7 +41,7 @@ const registry = {
             "rsv_denom": "factory/kujira1vvquglh6dn35gz22t7dd05y5kpckjleudyw9x3n6hgd324vq0hyq66zca0/ursv",
             "ghost_denom": "factory/kujira1ya42knfcsvy6eztegsn3hz7zpjvhzn05ge85xa2dy2zrjeul9hnspp3c06/urcpt",
             "ghost_vault_addr": "kujira1ya42knfcsvy6eztegsn3hz7zpjvhzn05ge85xa2dy2zrjeul9hnspp3c06",
-            "creation": 1715355840
+            "creation": 1718034240
         },
         "kujira168vaplwpxmfl9r95grtclh74fprle8f4g7rs4sn8ardf32pzaprq6r7ydk": {
             "address": "kujira168vaplwpxmfl9r95grtclh74fprle8f4g7rs4sn8ardf32pzaprq6r7ydk",
@@ -49,7 +49,7 @@ const registry = {
             "rsv_denom": "factory/kujira168vaplwpxmfl9r95grtclh74fprle8f4g7rs4sn8ardf32pzaprq6r7ydk/ursv",
             "ghost_denom": "factory/kujira1fkstg6fspy2e2c0j28fampext5raesgc9np639sth8myrwglrfpqujrdfl/urcpt",
             "ghost_vault_addr": "kujira1fkstg6fspy2e2c0j28fampext5raesgc9np639sth8myrwglrfpqujrdfl",
-            "creation": 1715355840
+            "creation": 1718034240
         }
     }
 };
