@@ -1,6 +1,6 @@
 {
   "name": "@entropic-labs/unstake.js",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "type": "module",
   "types": "dist/src/index.d.ts",
   "module": "dist/src/index.js",
