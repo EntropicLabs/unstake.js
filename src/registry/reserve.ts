@@ -50,6 +50,14 @@ const registry = {
             "ghost_denom": "factory/kujira1fkstg6fspy2e2c0j28fampext5raesgc9np639sth8myrwglrfpqujrdfl/urcpt",
             "ghost_vault_addr": "kujira1fkstg6fspy2e2c0j28fampext5raesgc9np639sth8myrwglrfpqujrdfl",
             "creation": 1718034240
+        },
+        "kujira18z6jnf76w20m32kr52l30sa5jy23qq9ncvwqnmy9stwe45xwt5rs7lq357": {
+            "address": "kujira18z6jnf76w20m32kr52l30sa5jy23qq9ncvwqnmy9stwe45xwt5rs7lq357",
+            "base_denom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+            "rsv_denom": "factory/kujira18z6jnf76w20m32kr52l30sa5jy23qq9ncvwqnmy9stwe45xwt5rs7lq357/ursv",
+            "ghost_denom": "factory/kujira1e6kvcdpxtu30t8x9sx0k692tln9z636gyu8sqf6w5fm5z3jrvjjqc8qfkr/urcpt",
+            "ghost_vault_addr": "kujira1e6kvcdpxtu30t8x9sx0k692tln9z636gyu8sqf6w5fm5z3jrvjjqc8qfkr",
+            "creation": 1721086680
         }
     }
 };
