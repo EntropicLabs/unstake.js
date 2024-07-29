@@ -17,7 +17,7 @@ const contracts = {
   reserve: {
     codes: {
       "harpoon-4": [3516],
-      "kaiyo-1": [327],
+      "kaiyo-1": [365],
     },
     mapper: (address: string, config: unknown) => {
       const { ["owner"]: _, ...newConfig } = config as ReserveConfigResponse;

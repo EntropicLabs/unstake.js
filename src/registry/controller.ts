@@ -25,7 +25,7 @@ const registry = {
         "kujira1ql30ep2a4f3cswhrr8sjp54t56l7qz7n7jzcnux2m286k6ev7s8q6m8jnp": {
             "address": "kujira1ql30ep2a4f3cswhrr8sjp54t56l7qz7n7jzcnux2m286k6ev7s8q6m8jnp",
             "protocol_fee": "0.5",
-            "protocol_fee_address": "kujira1aqfpp7vs3v3prc0huer6dyag4y07k4hawj2nxu",
+            "protocol_fee_address": "kujira1t93z5qh2e8zfnffjzwvvst0y5d4lecdtyu2klgxea820z667ptssmyrq4h",
             "delegate_code_id": 247,
             "reserve_address": "kujira1vvquglh6dn35gz22t7dd05y5kpckjleudyw9x3n6hgd324vq0hyq66zca0",
             "vault_address": "kujira1ya42knfcsvy6eztegsn3hz7zpjvhzn05ge85xa2dy2zrjeul9hnspp3c06",
@@ -47,7 +47,7 @@ const registry = {
         "kujira1x0rx0543jpjfpuskusaca54d2t8f6v6m3eaqwpgahxtmq7kc7vls2j3hth": {
             "address": "kujira1x0rx0543jpjfpuskusaca54d2t8f6v6m3eaqwpgahxtmq7kc7vls2j3hth",
             "protocol_fee": "0.5",
-            "protocol_fee_address": "kujira1aqfpp7vs3v3prc0huer6dyag4y07k4hawj2nxu",
+            "protocol_fee_address": "kujira1t93z5qh2e8zfnffjzwvvst0y5d4lecdtyu2klgxea820z667ptssmyrq4h",
             "delegate_code_id": 203,
             "reserve_address": "kujira1644hwd9mjasvnjf2qcadlzxs6egs6d2km2k6lety9u5fdmhzfg0svr54zh",
             "vault_address": "kujira143fwcudwy0exd6zd3xyvqt2kae68ud6n8jqchufu7wdg5sryd4lqtlvvep",
@@ -66,7 +66,7 @@ const registry = {
         "kujira1f49t5dn6xyfrxafxjujrdm0ents85536mdkum4pmlymycwnn9y0q5v86za": {
             "address": "kujira1f49t5dn6xyfrxafxjujrdm0ents85536mdkum4pmlymycwnn9y0q5v86za",
             "protocol_fee": "0.5",
-            "protocol_fee_address": "kujira1aqfpp7vs3v3prc0huer6dyag4y07k4hawj2nxu",
+            "protocol_fee_address": "kujira1t93z5qh2e8zfnffjzwvvst0y5d4lecdtyu2klgxea820z667ptssmyrq4h",
             "delegate_code_id": 253,
             "reserve_address": "kujira1644hwd9mjasvnjf2qcadlzxs6egs6d2km2k6lety9u5fdmhzfg0svr54zh",
             "vault_address": "kujira143fwcudwy0exd6zd3xyvqt2kae68ud6n8jqchufu7wdg5sryd4lqtlvvep",
@@ -85,7 +85,7 @@ const registry = {
         "kujira1t2nmpazlpacazde340k5rmmx6dpa49067fdqu3pzskgh9x3lj78qelrvv4": {
             "address": "kujira1t2nmpazlpacazde340k5rmmx6dpa49067fdqu3pzskgh9x3lj78qelrvv4",
             "protocol_fee": "0.5",
-            "protocol_fee_address": "kujira1aqfpp7vs3v3prc0huer6dyag4y07k4hawj2nxu",
+            "protocol_fee_address": "kujira1t93z5qh2e8zfnffjzwvvst0y5d4lecdtyu2klgxea820z667ptssmyrq4h",
             "delegate_code_id": 247,
             "reserve_address": "kujira168vaplwpxmfl9r95grtclh74fprle8f4g7rs4sn8ardf32pzaprq6r7ydk",
             "vault_address": "kujira1fkstg6fspy2e2c0j28fampext5raesgc9np639sth8myrwglrfpqujrdfl",
@@ -107,7 +107,7 @@ const registry = {
         "kujira1hmk8wy7vk0v0vpqasv6zv7hm3n2vce4m3yzkns6869j8h4u5qk2q0xndku": {
             "address": "kujira1hmk8wy7vk0v0vpqasv6zv7hm3n2vce4m3yzkns6869j8h4u5qk2q0xndku",
             "protocol_fee": "0.5",
-            "protocol_fee_address": "kujira1aqfpp7vs3v3prc0huer6dyag4y07k4hawj2nxu",
+            "protocol_fee_address": "kujira1t93z5qh2e8zfnffjzwvvst0y5d4lecdtyu2klgxea820z667ptssmyrq4h",
             "delegate_code_id": 247,
             "reserve_address": "kujira1644hwd9mjasvnjf2qcadlzxs6egs6d2km2k6lety9u5fdmhzfg0svr54zh",
             "vault_address": "kujira143fwcudwy0exd6zd3xyvqt2kae68ud6n8jqchufu7wdg5sryd4lqtlvvep",
@@ -129,7 +129,7 @@ const registry = {
         "kujira1m8jew3hlmg2s9c2wqjvv0l30xdfes5lnvrdkt58qzsvf3d3thecqn0pez3": {
             "address": "kujira1m8jew3hlmg2s9c2wqjvv0l30xdfes5lnvrdkt58qzsvf3d3thecqn0pez3",
             "protocol_fee": "0.5",
-            "protocol_fee_address": "kujira1aqfpp7vs3v3prc0huer6dyag4y07k4hawj2nxu",
+            "protocol_fee_address": "kujira1t93z5qh2e8zfnffjzwvvst0y5d4lecdtyu2klgxea820z667ptssmyrq4h",
             "delegate_code_id": 247,
             "reserve_address": "kujira1vvquglh6dn35gz22t7dd05y5kpckjleudyw9x3n6hgd324vq0hyq66zca0",
             "vault_address": "kujira1ya42knfcsvy6eztegsn3hz7zpjvhzn05ge85xa2dy2zrjeul9hnspp3c06",

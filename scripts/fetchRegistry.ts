@@ -28,7 +28,6 @@ async function writeContractToJson(
   const output = `${outputDir}/${contractName}.ts`;
   const data = `
       import type { Registry } from ".";
-import { CREATION_DATES } from '../src/registry/constants';
       const registry = ${contractData};
       const typedRegistry: Registry<typeof registry> = registry;
       export default typedRegistry;
