@@ -2,6 +2,5 @@ export { contracts } from "./types";
 export {
   CONTROLLERS,
   RESERVES,
-  fetchControllers,
-  fetchReserves,
+  fetchContracts
 } from "./registry";

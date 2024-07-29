@@ -32,32 +32,10 @@ const contracts = {
 };
 
 /**
- * Queries typed ontract data from a registry API
+ * Queries typed contract data from a registry API
  * @param registryApiUrl URL for the registry api
  * @returns Typed unstake contract data
  */
 export async function fetchContracts(registryApiUrl: string) {
   return fetchRegistry(registryApiUrl, contracts);
-}
-
-/**
- * Queries recent controller data from the on-chain registry
- * @param registryApiUrl URL for the registry api
- * @returns Typed controller data
- */
-export async function fetchControllers(registryApiUrl: string) {
-  return (
-    await fetchRegistry(registryApiUrl, { controller: contracts["controller"] })
-  ).controller;
-}
-
-/**
- * Queries recent reserver data from the on-chain registry
- * @param registryApiUrl URL for the registry api
- * @returns Typed reserve data
- */
-export async function fetchReserves(registryApiUrl: string) {
-  return (
-    await fetchRegistry(registryApiUrl, { controller: contracts["controller"] })
-  ).controller;
 }
