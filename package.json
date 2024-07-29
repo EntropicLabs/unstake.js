@@ -12,7 +12,8 @@
   },
   "peerDependencies": {
     "typescript": "^5.0.0",
-    "type-fest": "^4.20.0"
+    "type-fest": "^4.20.0",
+    "@entropic-labs/registry-api": "file:../registry-api"
   },
   "scripts": {
     "build": "rm -rf dist && tsc && tsc-alias",
@@ -20,5 +21,8 @@
   },
   "files": [
     "dist/**/*"
-  ]
+  ],
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
 }
