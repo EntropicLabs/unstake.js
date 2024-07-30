@@ -2,6 +2,7 @@ import type { ConfigResponse as ReserveConfigResponse } from "../types/UnstakeRe
 import type { ConfigResponse as ControllerConfigResponse } from "../types/UnstakeController.types";
 import { CREATION_DATES } from "./constants";
 import { fetchRegistry } from "@entropic-labs/registry-api";
+import { CONTROLLERS, RESERVES } from "./index";
 
 const contracts = {
   controller: {
@@ -37,5 +38,10 @@ const contracts = {
  * @returns Typed unstake contract data
  */
 export async function fetchContracts(registryApiUrl: string) {
-  return fetchRegistry(registryApiUrl, contracts);
+  return fetchRegistry(registryApiUrl, contracts).catch((error) => {
+    console.error(
+      `Defaulting to saved contracts due to error in fetching registry: ${error}`
+    );
+    return { controller: CONTROLLERS, reserve: RESERVES };
+  });
 }
