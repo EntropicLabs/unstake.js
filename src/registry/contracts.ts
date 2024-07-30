@@ -10,8 +10,8 @@ const contracts = {
       "harpoon-4": [3512],
       "kaiyo-1": [326],
     },
-    mapper: (address: string, config: unknown) => {
-      const { ["owner"]: _, ...newConfig } = config as ControllerConfigResponse;
+    mapper: (address: string, config: ControllerConfigResponse) => {
+      const { ["owner"]: _, ...newConfig } = config;
       return newConfig;
     },
   },
@@ -20,8 +20,8 @@ const contracts = {
       "harpoon-4": [3516],
       "kaiyo-1": [365],
     },
-    mapper: (address: string, config: unknown) => {
-      const { ["owner"]: _, ...newConfig } = config as ReserveConfigResponse;
+    mapper: (address: string, config: ReserveConfigResponse) => {
+      const { ["owner"]: _, ...newConfig } = config;
       const creation =
         CREATION_DATES[address as keyof typeof CREATION_DATES] ?? 0;
       return {
