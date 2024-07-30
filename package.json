@@ -20,5 +20,9 @@
   },
   "files": [
     "dist/**/*"
-  ]
+  ],
+  "dependencies": {
+    "@entropic-labs/registry-api": "../registry-api",
+    "dotenv": "^16.4.5"
+  }
 }
